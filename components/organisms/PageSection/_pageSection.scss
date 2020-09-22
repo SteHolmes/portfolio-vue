@@ -1,0 +1,44 @@
+.bg-blue {
+  background-color: $mid-blue;
+  color: white;
+
+  &:after {
+    border-top-color: $mid-blue !important;
+  }
+}
+
+.bg-dark-blue {
+  background-color: $dark-blue;
+  color: white;
+
+  &:after {
+    border-top-color: $dark-blue !important;
+  }
+}
+
+.bg-white {
+  background-color: $white;
+  color: black;
+
+  &:after {
+    border-top-color: $white !important;
+  }
+}
+
+.bg-ice {
+  background-color: $ice;
+  color: black;
+
+  &:after {
+    border-top-color: $ice !important;
+  }
+}
+
+.bg-orange {
+  background-color: $mid-orange;
+  color: black;
+
+  &:after {
+    border-top-color: $mid-orange !important;
+  }
+}
