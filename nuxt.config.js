@@ -6,7 +6,7 @@ const getDynamicRoutes = function () {
   return [].concat(
     glob
       .sync('*.md', { cwd: 'posts/' })
-      .map((filepath) => `/software/${path.basename(filepath, '.md')}`),
+      .map((filepath) => `/development/${path.basename(filepath, '.md')}`),
     glob
       .sync('*.md', { cwd: 'blog/' })
       .map((filepath) => `/blog/${path.basename(filepath, '.md')}`)
@@ -78,6 +78,7 @@ module.exports = {
     '@fortawesome/fontawesome-free/css/all.css',
     '~assets/argon/scss/argon.scss',
     'bootstrap-vue/dist/bootstrap-vue.css',
+    '~assets/css/custom/main.scss',
   ],
 
   /*

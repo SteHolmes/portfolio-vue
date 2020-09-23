@@ -1,30 +1,20 @@
 <template>
-  <section :class="`section pb-0`">
-    <div class="container">
-      <div
-        class="row row-grid"
-        v-for="i in Math.ceil(posts.length / 3)"
-        :key="i"
-      >
-        <post-card
-          v-for="post in posts.slice((i - 1) * 3, i * 3)"
-          v-bind:key="post.slug"
-          :prefix="prefix"
-          :post="post"
-          :ct="getClassType()"
-        ></post-card>
-      </div>
+  <section aria-label="showcase">
+    <div class="row">
+      <showcase-card></showcase-card>
+      <showcase-card></showcase-card>
+      <showcase-card></showcase-card>
     </div>
   </section>
 </template>
 
 <script>
-import PostCard from '~/components/molecules/Card/PostCard.vue'
+import ShowcaseCard from '~/components/molecules/Card/ShowcaseCard.vue'
 export default {
   layout: 'default',
   name: 'Showcase',
   components: {
-    PostCard,
+    ShowcaseCard,
   },
   props: {
     prefix: String,

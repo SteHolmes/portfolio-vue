@@ -1,0 +1,19 @@
+  
+$primary:  #DD812B;
+$secondary: #419ABB;
+$secondary-dark: #1A475F;
+$secondary-light: #419ABB;
+$border-light: #e5e5e5;
+$border-dark: #4a5056;
+$enable-responsive-font-sizes: true;
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 375px,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@import "~/node_modules/bootstrap/scss/bootstrap.scss";

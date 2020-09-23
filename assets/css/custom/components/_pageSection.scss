@@ -42,3 +42,64 @@
     border-top-color: $mid-orange !important;
   }
 }
+
+.skewed-page-section {
+  position: relative;
+  padding: $skew-padding 0;
+  background-color: transparent;
+  color: $white;
+  z-index: 1;
+  
+  @include media-breakpoint-up(lg) { 
+    top: -40px; 
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: skewY(-3deg);
+    background-image: url(https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(-45deg, #ee9852, #ec7141, #23a6d5, #23d5ab);
+	  background-size: 400% 400%;
+	  animation: gradient 15s ease infinite;
+    transform: skewY(-3deg);
+    opacity: 0.8;
+  }
+
+  &__wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    z-index: 1;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+

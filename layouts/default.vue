@@ -1,8 +1,32 @@
 <template>
   <div id="app">
-    <nav id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark pt-3 pb-5">
+      <a class="navbar-brand" href="#">Navbar w/ text</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <router-link to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/about">About</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/contact">Contact</router-link>
+          </li>
+        </ul>
+        <span class="navbar-text">Navbar text with an inline element</span>
+      </div>
     </nav>
     <main>
       <div>
@@ -25,28 +49,4 @@ export default {
 
 <style lang="scss">
 @import '~/assets/css/custom/main.scss';
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-
-main {
-  margin: 0 auto;
-}
 </style>

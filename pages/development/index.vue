@@ -1,16 +1,16 @@
 <template>
   <div>
-    <showcase prefix="software" :slug="slug" :posts="posts" />
+    <card-grid prefix="software" :slug="slug" :posts="posts" />
   </div>
 </template>
 
 <script>
-import Showcase from '~/components/organisms/Showcase/Showcase.vue'
+import CardGrid from '~/components/organisms/CardGrid/CardGrid.vue'
 export default {
   layout: 'default',
   name: 'WebDevelopment',
   components: {
-    Showcase,
+    CardGrid,
   },
   props: ['slug'],
   async asyncData() {

@@ -1,4 +1,10 @@
+@import "overrides.scss";
 @import "global.scss";
 @import "text.scss";
 @import "utilities.scss";
 @import "variables.scss";
+
+@import "components/pageSection.scss";
+@import "components/projectShowcase.scss";
+
+@import '~/node_modules/bootstrap/scss/bootstrap.scss';

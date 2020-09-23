@@ -1,0 +1,106 @@
+.project-showcase {
+
+  
+	div.item {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		width: 100%;
+		background: #000000;
+		text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    
+		* {
+			box-sizing: border-box;
+			transition: all 0.5s ease-in-out;
+			cursor: pointer;
+    }
+    
+		img {
+			max-width: 100%;
+			height: 210px;
+    }
+    
+		i {
+			position: absolute;
+			top: 25%;
+			left: 50%;
+			border-radius: 50%;
+			font-size: 34px;
+			color: $black;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			background: $secondary-light;
+			transform: translate(-50%, -50%) scale(0);
+			transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+    
+		.icon {
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			position: absolute;
+    }
+    
+		&:hover {
+			img {
+				opacity: 0.3;
+        filter: grayscale(100%);
+      }
+      
+			i {
+				transform: translate(-50%, -50%) scale(1);
+				transition: 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+    }
+    
+		p {
+			padding: 10px 20px;
+			font-size: 0.9em;
+    }
+    
+		.proj-title {
+			padding-bottom: 0;
+			font-size: 1.1em;
+			font-weight: bold;
+    }
+    
+		.source {
+			position: absolute;
+			bottom: 0;
+			padding: 10px;
+    }
+  }
+  
+	div.item.purple {
+    background-color: #8A5373;
+    
+		i {
+			color: #8A5373;
+		}
+  }
+  
+	div.item.yellow {
+		background-color: #FCE181;
+		i {
+			color: #FCE181;
+		}
+  }
+  
+	div.item.aqua {
+		background-color: #30B9C1;
+		i {
+			color: #30B9C1;
+		}
+  }
+  
+	.proj-desc {
+		span {
+			font-style: italic;
+			font-weight: bold;
+		}
+  }
+  
+}
