@@ -1,5 +1,5 @@
 <template>
-  <section aria-label="showcase">
+  <section aria-label="showcase" class="project-showcase">
     <div class="row">
       <showcase-card></showcase-card>
       <showcase-card></showcase-card>

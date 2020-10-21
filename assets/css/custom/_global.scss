@@ -1,5 +1,6 @@
 @import 'utilities.scss';
 @import 'variables.scss';
+@import 'text.scss';
 @import '~/node_modules/bootstrap/scss/bootstrap.scss';
 
 body {
@@ -10,12 +11,27 @@ main {
   background-color: $dark;
   height: 100%;
 }
-/*
-.container {
-  width: 100%;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}*/
+
+.owls-0 {
+  * + * {
+    margin-top: 0;
+  }
+}
+
+.owls-1 {
+  * + * {
+    margin-top: 1em;
+  }
+}
+
+.owls-2 {
+  * + * {
+    margin-top: 1.5em;
+  }
+}
+
+.owls-3 {
+  * + * {
+    margin-top: 1.75em;
+  }
+}

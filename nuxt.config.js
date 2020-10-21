@@ -8,6 +8,9 @@ const getDynamicRoutes = function () {
       .sync('*.md', { cwd: 'posts/' })
       .map((filepath) => `/development/${path.basename(filepath, '.md')}`),
     glob
+      .sync('*.md', { cwd: 'listings/' })
+      .map((filepath) => `/experience/${path.basename(filepath, '.md')}`),
+    glob
       .sync('*.md', { cwd: 'blog/' })
       .map((filepath) => `/blog/${path.basename(filepath, '.md')}`)
   )
@@ -122,6 +125,7 @@ module.exports = {
         test: /\.md$/,
         include: [
           path.resolve(__dirname, 'posts'),
+          path.resolve(__dirname, 'listings'),
           path.resolve(__dirname, 'blog'),
         ],
         loader: 'frontmatter-markdown-loader',

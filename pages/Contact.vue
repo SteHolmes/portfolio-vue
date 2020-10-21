@@ -2,7 +2,7 @@
   <section class="text-center">
     <div class="row">
       <div class="col-lg-6 mx-auto">
-        <h2>GET IN TOUCH</h2>
+        <h2>Get in touch page</h2>
         <p>Lorem ipsum</p>
       </div>
     </div>
