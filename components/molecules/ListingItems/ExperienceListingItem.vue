@@ -1,5 +1,5 @@
 <template>
-  <div class="row no-gutters text-dark bg-light p-4">
+  <div class="row no-gutters text-dark bg-light p-4 rounded">
     <div class="col-lg-9 pl-2">
       <h4 :class="`text-${ct}`">
         {{ item.attributes.title }}
@@ -11,7 +11,7 @@
       <span
         v-for="tag in tags"
         v-if="tags.length > 0"
-        :class="`badge badge-pill badge-primary mr-1`"
+        :class="`badge badge-pill badge-primary mr-1 px-3 py-2`"
       >
         {{ tag }}
       </span>

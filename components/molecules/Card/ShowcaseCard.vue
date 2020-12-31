@@ -1,6 +1,6 @@
 <template>
   <div class="col-lg-4">
-    <div class="item bg-light">
+    <div class="item bg-light rounded">
       <img
         class="w-100"
         src="https://images.unsplash.com/photo-1464061884326-64f6ebd57f83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"

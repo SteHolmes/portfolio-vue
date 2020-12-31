@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark pt-3 pb-5">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark py-3">
       <a class="navbar-brand" href="#">Navbar w/ text</a>
       <button
         class="navbar-toggler"
@@ -33,7 +33,7 @@
         <router-view></router-view>
       </div>
     </main>
-    <footer class="bg-dark">
+    <footer>
       <div class="container py-5 text-white">
         <div class="row">
           <div class="col-lg-6 mx-auto">
