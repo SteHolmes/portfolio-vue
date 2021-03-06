@@ -1,26 +1,29 @@
 <template>
   <section aria-label="showcase" class="project-showcase">
     <div class="row">
-      <showcase-card></showcase-card>
-      <showcase-card></showcase-card>
-      <showcase-card></showcase-card>
+      <div class="col-lg-4" v-for="(item, index) in data.items" :key="index">
+        <showcase-card
+          :data="item"
+        />
+      </div>
     </div>
   </section>
 </template>
 
 <script>
 import ShowcaseCard from '~/components/molecules/Card/ShowcaseCard.vue'
+import Interests from '~/json/interests.json'
 export default {
   layout: 'default',
   name: 'Showcase',
   components: {
     ShowcaseCard,
   },
-  props: {
-    prefix: String,
-    slug: String,
-    posts: Array,
-  },
+  data(){
+    return{
+      data: Interests
+    }
+  }
 }
 </script>
 

@@ -16,13 +16,13 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <router-link to="/">Home</router-link>
+            <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/about">About</router-link>
+            <router-link to="/about" class="nav-link">About</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/contact">Contact</router-link>
+            <router-link to="/contact" class="nav-link">Contact</router-link>
           </li>
         </ul>
         <span class="navbar-text">Navbar text with an inline element</span>

@@ -1,9 +1,7 @@
-
-
 .page-section {
   position: relative;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   background-color: $dark-blue;
   color: $white;
   z-index: 1;
@@ -14,6 +12,26 @@
     padding-top: 8rem;
     padding-bottom: 6rem;
     z-index: 1;
+  }
+
+  &__body-wrapper {
+    padding: 2rem;
+    background-color: $pale-navy;
+    border: 1px outset $mid-slate;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      margin-left: -2rem;
+      margin-top: -1rem;
+      border-radius: 100%;
+      background-color: $light-blue;
+      box-shadow: 0 0 100px 100px $light-blue;
+      opacity: 0.5;
+      z-index: -1;
+    }
   }
 
   &--hero {
@@ -83,8 +101,12 @@
   }
   
   &--bg-asphalt {
-    background-color: darken($dark-blue, 1%);
+    background-color: lighten($dark-blue, 3%);
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+    &:nth-child(even) {
+      background-color: $dark-blue;
+    }
   }
 
   &--bg-rock {
